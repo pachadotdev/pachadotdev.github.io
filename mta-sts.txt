@@ -1,0 +1,9 @@
+version: STSv1
+
+mode: testing
+
+mx: box.pacha.dev
+
+mx: *.pacha.dev
+
+max_age: 806400 

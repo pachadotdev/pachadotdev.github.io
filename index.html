@@ -1,11 +1,128 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-   <head>
-      <title>HTML Meta Tag</title>
-      <meta http-equiv = "refresh" content = "0; url = https://github.com/pachadotdev" />
-   </head>
-   <body>
-      <p>Redirecting to GitHub</p>
-      <a rel="me" href="https://mastodonsocial.ca/@pacha">Mastodon</a>
-   </body>
+	
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>
+Mauricio "Pachá" Vargas Sepúlveda
+</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<h1 id="title">Mauricio "Pachá" Vargas Sepúlveda</h1>
+
+<span>
+<a href="#about-me">About me</a>
+| <a href="#research">Research</a>
+| <a href="#r-and-shiny-training">R and Shiny training</a>
+| <a href="#projects">Projects</a>
+| <a href="#projects">Books</a>
+</span>
+
+<h2 id="about-me">About me</h2>
+
+<p>👋 I am a statistician interested in applying statistical methods to address specific policy-relevant questions, particularly in international trade, migration, investments and theoretically founded empirical work. These interests led me to create a consistent line of <a href="#selected-r-packages">R packages</a> to provide datasets and estimation methods useful for researchers interested in International Trade and affine disciplines.</p>
+
+<p>I am completing a Master in Political Science at UofT, where I enrolled in the core courses in Public Policy, alongside the methods track for policy and politics research. I hold a Master in Statistics from <a href="https://www.uc.cl/en">Universidad Católica de Chile</a> (distinction and honors), and a professional degree (5 years diploma) in Business Engineering (i.e., Business and Economics) from the University of Chile.</p>
+
+<p>To contact me, send me an email to hello+spam@pacha.dev (i.e., use +r, +training, +tutoring, etc. and I&#39;ll see your email fast enough). I can provide my CV (academic/profesional) upon request.</p>
+
+<p>Follow me on <a rel="me" href="https://mastodonsocial.ca/@pacha">Mastodon</a>! I created a new instance called Mastodon Social. I also have an <a href="https://orcid.org/0000-0003-1017-7574">ORCID</a> profile.</p>
+
+<h2 id="research">Research</h2>
+
+<p>My main research interests and contributions are in three interrelated areas: (i) Political economy of trade policies; (ii) Gravity estimation and efficient software implementations; and (iii) Efficient data access, interrelated areas directly linked to the Sustainable Development goals of <a href="https://www.un-ilibrary.org/content/sdgs/sdg9">Industry, Innovation and Infrastructure</a> and <a href="https://www.un-ilibrary.org/content/sdgs/sdg16">Peace, Justice and Strong Institutions</a>.</p>
+
+<p>For my thesis for the Master in Political Science, I am working on each of these topics, with a focus in reproducibility. I prepared a preprint on arXiv, <a href=" 	arXiv:2209.14748">Economic effects of Chile FTAs and an eventual CTPP accession</a>, using aggregated data, to illustrate the general idea.</p>
+
+<h3 id="political-economy-of-trade-policies">Political economy of trade policies</h3>
+
+<p>My main interest is to explore the distributional consequences of trade policy changes at industry and sector levels. When a few industries concentrate trade gains and others experience losses in a positive overall result scenario, the distribution of gains introduces a political justification to oppose trade at the expense of economic efficiency. The global economic interdependence justifies measuring the effect of trade policy changes in one market and how this will trigger ripple effects in the rest of the world.</p>
+
+<h3 id="gravity-estimation-and-efficient-software-implementations">Gravity estimation and efficient software implementations</h3>
+
+<p>One of the challenges in gravity modeling is to produce theoretically consistent models that are also computationally efficient. For  masters in Statistics' thesis I replicated all the models in the book <a href="https://www.wto.org/english/res_e/publications_e/advancedguide2016_e.htm">An Advanced Guide to Trade Policy Analysis</a> and writing open source software for specific gravity modeling including clustered standard errors and misspecification tests. In this line, I have written the R package <a href="https://CRAN.R-project.org/package=gravity">gravity</a>, with its corresponding <a href="https://joss.theoj.org/papers/10.21105/joss.01038">article</a>, which implements different methods available in the literature such as Poisson Pseudo Maximum Likelihood alongside OLS, Logit and other classic methods, with the idea of providing policy makers with easy to use software that allows them to focus on the evaluation of initiatives such as subscribing or expanding a Free Trade Agreement.</p>
+
+<h3 id="gravity-estimation-and-efficient-software-implementations">Efficient data access</h3>
+
+<p>I intend to summarise gigabytes of data into country and product profiles for academics and policymakers interested in trade. Since 2017, I’ve maintained the project <a href="#open-trade-statistics">Open Trade Statistics</a>, where I provide free access to curated trade data based on the United Nations trade statistics. I’ve created R packages to easily access <a href="https://github.com/pachadotdev/desta">The Design of Trade Agreements Database (DESTA)</a>, the <a href="https://github.com/pachadotdev/usitcgravity">International Trade and Production Database for Estimation (ITPD-E)</a>, and other affine datasets. This work aims at easing data access to help to facilitate research, and has required me to master R, C++ and SQL, therefore I have computational skills more common in software engineering rather than Political Science or Statistics.</p>
+
+<h2 id="r-and-shiny-training">R and Shiny training</h2>
+
+<p>I offer short courses for groups and individual personalized sessions at <a href="https://www.buymeacoffee.com/pacha/extras">Buy Me a Coffee</a>. I am a certified Tidyverse and Shiny instructor by <a href="https://education.rstudio.com/trainers">RStudio</a> and a Software Carpentry Instructor with a Carpentries certification.</p>
+
+<h2 id="projects">Projects</h2>
+
+<h3 id="selected-r-packages">Selected R packages</h3>
+
+<ul>
+<li>Vargas, et. al (2022). <em>Fixest 2: Efficient Fixed-Effects Estimation in R With C++ 11 Backend</em>. URL: <a href="https://github.com/pachadotdev/fixest/tree/cpp11-some-r-refactoring">github.com/pachadotdev/fixest2</a>.</li>
+<li>Vargas (2022). <em>The Design of Trade Agreements Database (DESTA)</em>. URL: <a href="https://github.com/pachadotdev/usitcgravity">github.com/pachadotdev/usitcgravity</a>.</li>
+<li>Vargas (2022). <em>USITC Gravity Database Adapted From the International Trade and Production Database for Estimation (ITPD-E) and Dynamic Gravity Dataset (DGD)</em>. URL: <a href="https://github.com/pachadotdev/desta">github.com/pachadotdev/desta</a>.</li>
+<li>Woelwer, A.-L., et al. (2021). <em>Gravity: Estimation methods for gravity models</em>. URL: <a href="https://CRAN.R-project.org/package=gravity">CRAN.R-project.org/package=gravity</a>.</li>
+<li>Vargas, M. (2021). <em>Tradepolicy: Replication of an advanced guide to trade policy analysis</em>. URL: <a href="https://CRAN.R-project.org/package=tradepolicy">CRAN.R-project.org/package=tradepolicy</a>.</li>
+<li>Vargas, M. (2021). <em>Tradestatistics: Open trade statistics API wrapper and utility program</em>. URL: <a href="https://docs.ropensci.org/tradestatistics">docs.ropensci.org/tradestatistics</a>.</li>
+<li>Iannone, R. &amp; Vargas, M. (2021). <em>Pointblank: Data validation and organization of metadata for local and remote tables</em>. URL: <a href="https://CRAN.R-project.org/package=pointblank">CRAN.R-project.org/package=pointblank</a>.</li>
+</ul>
+
+<p><i>The dates reflect the last update.</i></p>
+
+<h3 id="cran">CRAN</h3>
+
+<p>I maintain the <a href="https://cran.r-project.org/web/views/WebTechnologies.html">WebTechnologies</a> view and the official mirror for <a href="https://cran.dcc.uchile.cl">Chile</a>.</p>
+
+<h3 id="latex">LaTeX</h3>
+
+<p>I created the R package <a href="https://github.com/pachadotdev/varsityblues">varsityblues</a>, which allow you to write assignments, presentations and thesis in RStudio by following UofT style rules. Its advantage is that avoids the need to copy and paste tables or plots from R outputs into Word/LaTeX documents, instead it allows to work with notebooks that you can export to PDF, and it installs/configures LaTeX setup automatically.</p>
+
+<p>This package is based on the LaTeX style files that that late professor <a href="https://kcborder.caltech.edu/">Kim C. Border</a> once sent to me.</p>
+
+<h3 id="cloud-computing">Cloud computing</h3>
+
+<p>I created images for <a href="https://marketplace.digitalocean.com/apps/rstudio">RStudio Server</a> and <a href="https://marketplace.digitalocean.com/apps/rstudio-kubernetes">RStudio Server + Kubernetes</a>, which allow you to create virtual machines on <a href="https://m.do.co/c/1d5a471e5f54">DigitalOcean</a> and to skip the setup time to install the Tidyverse and other packages. With these images, it takes around 30 seconds to have a ready to go setup for Data Science. This combines well with <a href="https://CRAN.R-project.org/package=analogsea">analogsea</a> as I explained in my <a href="https://pacha.dev/blog/2021/07/17/analogsea-using-arrow-s3-and-digitalocean-for-efficient-model-fitting-in-rstudio/">blog</a>.</p>
+
+<p>In simple terms, this allows you to rent a supercomputer, for example, with 48 cores and 200 GB in RAM, for a reasonable price.</p>
+
+<h2 id="datasets">Datasets</h2>
+
+<h3 id="open-trade-statistics">Open Trade Statistics</h3>
+
+<p>Since 2017 I've maintained <a href="https://tradestatistics.io">Open Trade Statistics</a>, a project created with the intention to lower the barrier to working with international economic trade data. It includes a public API, a dashboard, and an R package for data retrieval. The project started when I was affected by the fact that many Latin American Universities have limited or no access to the United Nations Commodity Trade Statistics Database (UN COMTRADE).</p>
+
+<p>OTS provides a curated database derived from UN COMTRADE. I can provide a full SQL dump of the database or share subsets of the database for the period 2002-2020 aggregated by countries or by products up to a detail of six digits in the Harmonised System revision 2012.</p>
+
+<p>After contacting UN COMTRADE, and suggesting to them my idea of doing something similar to BACI but available for anyone but keeping commercial purposes out of the scope of the project, I got an authorization to share curated versions of their datasets.</p>
+
+<h3 id="sql">SQL Databases for students and educators</h3>
+
+<p>Check <a href="https://databases.pacha.dev/">SQL Databases for students and educators</a> if you need access to PostgreSQL, MySQL and SQL Server databases (in strictly descending order of preference!).</p>
+
+<p>Publicly accessible databases often impose query limits or require registration. Even when I maintain public and limit-free APIs, I never wanted to host a public database because I tend to think that the connection strings are a problem for the user.</p>
+
+<p>I’ve decided to host different light/medium size by using PostgreSQL and MariaDB (a modern fork of MySQL) backends. I tend to prefer PostgreSQL because it easier to configure on client and server side, without strange tricks (see the Problems with MySQL/Maria and SQL Server section).</p>
+
+<p>Why these database backends? I think there are a ton of small edge cases when moving between DB back ends and so testing lots with live databases is quite valuable. With this resource you can benchmark speed, compression, and DDL types.</p>
+
+<h2 id="books">Books</h2>
+
+<h3 id="hitchhikers-guide">The Hitchhiker's Guide to Ggplot2 & The Hitchhiker's Guide to Plotnine</h3>
+
+<p><a href="https://leanpub.com/ggplot-guide">The Hitchhiker's Guide to Ggplot2</a> is a plotting book for R users. <a href="https://leanpub.com/plotnine-guide">The Hitchhiker's Guide to Plotnine</a> is a plotting book for Python users.</p>
+
+<p>These are a technical books. The scope of the books is to go straight to the point and the writing style is similar to a recipe with detailed instructions. It is assumed that you know the basics of R and Python and that you want to learn how to create beautiful plots.</p>
+
+<p>Each chapter will explain how to create a different type of plot, and will take you step-by-step from a basic plot to a highly customised graph. The chapters' order is by degree of difficulty.</p>
+
+<p>Every chapter is independent from the others. You can read the whole book or go to a section of interest and we are sure that it will be easy to understand the instructions and reproduce our examples without reading the first chapters.</p>
+
+<h3 id="r4ds-es">R for Data Science in Spanish (R4DS-ES)</h3>
+
+<p>I translated a large part of 📖 R for Data Science translation into <a href="https://es.r4ds.hadley.nz/">Spanish</a>, where I also had to organize the community involved in the translation. This project also features <a href="https://r4ds-soluciones.netlify.app">solutions</a> in Spanish.</p>
+
+<img src="valid-html401.png" alt="Valid HTML 4.01 Transitional" width="88" height="31" align="right"></a>
+
+</body>
+
 </html>

@@ -23,31 +23,86 @@ Mauricio "Pachá" Vargas Sepúlveda
 
 <h2 id="about-me">About me</h2>
 
-<p>I am a statistician interested in applying statistical methods to address specific policy-relevant questions, particularly in international trade, migration, investments and theoretically founded empirical work. These interests led me to create a consistent line of <a href="#selected-r-packages">R packages</a> to provide datasets and estimation methods useful for researchers interested in International Trade and affine disciplines.</p>
+<p>I am a statistician interested in applying statistical methods to address specific policy-relevant questions, particularly in 
+    international trade, migration, investments and theoretically founded empirical work. These interests led me to create a 
+    consistent line of <a href="#selected-r-packages">R packages</a> to provide datasets and estimation methods useful for 
+    researchers interested in International Trade and affine disciplines.</p>
 
-<p>I am completing a Master in Political Science at UofT, where I enrolled in the core courses in Public Policy, alongside the methods track for policy and politics research. I hold a Master in Statistics from <a href="https://www.uc.cl/en">Universidad Católica de Chile</a> (distinction and honors), and a professional degree (5 years diploma) in Business Engineering (i.e., Business and Economics) from the University of Chile.</p>
+<p>I am completing a Master in Political Science at UofT, where I enrolled in the core courses in Public Policy, alongside the 
+    methods track for policy and politics research. I hold a Master in Statistics from <a href="https://www.uc.cl/en">Universidad 
+    Católica de Chile</a> (distinction and honors), and a professional degree (5 years diploma) in Business Engineering (i.e., 
+    Business and Economics) from the University of Chile.</p>
 
-<p>To contact me, send me an email to hello+spam@pacha.dev (i.e., use +r, +training, +tutoring, etc. and I&#39;ll see your email fast enough). I can provide my CV (academic/profesional) upon request.</p>
+<p>To contact me, send me an email to hello+spam@pacha.dev (i.e., use +r, +training, +tutoring, etc. and I&#39;ll see your email 
+    fast enough). I can provide my CV (academic/profesional) upon request.</p>
 
-<p>Follow me on <a rel="me" href="https://mastodonsocial.ca/@pacha">Mastodon</a>! I created a new instance called Mastodon Social. I also have <a href="https://orcid.org/0000-0003-1017-7574">ORCID</a> and <a href="https://github.com/pachadotdev">GitHub</a> profiles.</p>
+<p>Follow me on <a rel="me" href="https://mastodonsocial.ca/@pacha">Mastodon</a>! I created a new instance called Mastodon Social. 
+    I also have <a href="https://orcid.org/0000-0003-1017-7574">ORCID</a> and <a href="https://github.com/pachadotdev">GitHub</a> 
+    profiles.</p>
 
 <h2 id="research">Research</h2>
 
-<p>My main research interests and contributions are in three interrelated areas: (i) Political economy of trade policies; (ii) Gravity estimation and efficient software implementations; and (iii) Efficient data access, interrelated areas directly linked to the Sustainable Development goals of <a href="https://www.un-ilibrary.org/content/sdgs/sdg9">Industry, Innovation and Infrastructure</a> and <a href="https://www.un-ilibrary.org/content/sdgs/sdg16">Peace, Justice and Strong Institutions</a>.</p>
+<p>My main research interests and contributions are in three interrelated areas: (i) Political economy of trade policies; 
+    (ii) Gravity estimation and efficient software implementations; and (iii) Efficient data access, interrelated areas directly 
+    linked to the Sustainable Development goals of <a href="https://www.un-ilibrary.org/content/sdgs/sdg9">Industry, Innovation and 
+    Infrastructure</a> and <a href="https://www.un-ilibrary.org/content/sdgs/sdg16">Peace, Justice and Strong Institutions</a>.</p>
 
-<p>For my thesis for the Master in Political Science, I am working on each of these topics, with a focus in reproducibility. I prepared a preprint on arXiv, <a href=" 	arXiv:2209.14748">Economic effects of Chile FTAs and an eventual CTPP accession</a>, using aggregated data, to illustrate the general idea.</p>
+<p>For my thesis for the Master in Political Science, I am working on each of these topics, with a focus in reproducibility. I 
+    prepared a preprint on arXiv, <a href=" 	arXiv:2209.14748">Economic effects of Chile FTAs and an eventual CTPP accession</a>, 
+    using aggregated data, to illustrate the general idea.</p>
 
 <h3 id="political-economy-of-trade-policies">Political economy of trade policies</h3>
 
-<p>My main interest is to explore the distributional consequences of trade policy changes at industry and sector levels. When a few industries concentrate trade gains and others experience losses in a positive overall result scenario, the distribution of gains introduces a political justification to oppose trade at the expense of economic efficiency. The global economic interdependence justifies measuring the effect of trade policy changes in one market and how this will trigger ripple effects in the rest of the world.</p>
+<p>My main interest is to explore the distributional consequences of trade policy changes at industry and sector levels. 
+    The global economic interdependence justifies measuring the effect of trade policy changes in one market and how 
+    this will trigger ripple effects in the rest of the world. Economic gains or losses are not homogeneous at sub-national level,
+    and are often highly correlated with industries or sectors geographically dispersed because of especialization.</p>
+
+<p>I am interested in studying existing agreements, observed tariffs, non-tariff measures (NTMs), and bilateral trade flow to produce 
+    knowledge that countries can use to negociate or expand their agreements intelligently. My central questions are:</p>
+
+<ul>
+    <li>Which are the decomposed effects (i.e. GDP changes from one province) of the trade policy?</li>
+    <li>Which commodities should be present in tarrifs negotiation?</li>
+    <li>Which is the ideal timing to face trade-induced unemployment with industry protection and reconverting the workforce?</li>
+    <li>Can we use NTMs to achieving Sustainable Development Goals (SDGs)?</li>
+</ul>
+
+<p>Trade policy also covers sanctions, whose application aims at destabiling a dictatorship, preventing war or protecting human 
+    rights in a country. I ask myself about the efficacy of those measures and who finally pays the costs of those sanctions, but I 
+    also ask myself how to tailor sanctions to maximize their efectiveness.</p>
 
 <h3 id="gravity-estimation-and-efficient-software-implementations">Gravity estimation and efficient software implementations</h3>
 
-<p>One of the challenges in gravity modeling is to produce theoretically consistent models that are also computationally efficient. For  masters in Statistics' thesis I replicated all the models in the book <a href="https://www.wto.org/english/res_e/publications_e/advancedguide2016_e.htm">An Advanced Guide to Trade Policy Analysis</a> and writing open source software for specific gravity modeling including clustered standard errors and misspecification tests. In this line, I have written the R package <a href="https://CRAN.R-project.org/package=gravity">gravity</a>, with its corresponding <a href="https://joss.theoj.org/papers/10.21105/joss.01038">article</a>, which implements different methods available in the literature such as Poisson Pseudo Maximum Likelihood alongside OLS, Logit and other classic methods, with the idea of providing policy makers with easy to use software that allows them to focus on the evaluation of initiatives such as subscribing or expanding a Free Trade Agreement.</p>
+<p>One of the challenges in gravity modeling is to produce theoretically consistent models that are also computationally efficient. 
+    For  masters in Statistics' thesis I replicated all the models in the book 
+    <a href="https://www.wto.org/english/res_e/publications_e/advancedguide2016_e.htm">An Advanced Guide to Trade Policy Analysis</a> 
+    and writing open source software for specific gravity modeling including clustered standard errors and misspecification tests.</p>
+
+<p>In  this line, I have written the R package <a href="https://CRAN.R-project.org/package=gravity">gravity</a>, with its corresponding 
+    <a href="https://joss.theoj.org/papers/10.21105/joss.01038">article</a>, which implements different methods available in the 
+    literature. It covers Poisson Pseudo Maximum Likelihood (PPML), OLS, Logit and other classic methods, with the idea of providing 
+    policy makers with easy to use software that allows them to focus on the evaluation of initiatives such as subscribing or 
+    expanding a Free Trade Agreement.</p>
+
+<p>I write open source software because Least Developed Countries (LDCs) face limited resources for commercial software and 
+    computational power, and they lack the required analytical capacity to formulate evidence-based policies and assess their impacts. I 
+    believe I can make a contribution to strengthening analytical capacity of LDCs to conduct analysis of impact of trade policy 
+    towards sustainable development.</p>
 
 <h3 id="efficient-data-access">Efficient data access</h3>
 
-<p>I intend to summarise gigabytes of data into country and product profiles for academics and policymakers interested in trade. Since 2017, I’ve maintained the project <a href="#open-trade-statistics">Open Trade Statistics</a>, where I provide free access to curated trade data based on the United Nations trade statistics. I’ve created R packages to easily access <a href="https://github.com/pachadotdev/desta">The Design of Trade Agreements Database (DESTA)</a>, the <a href="https://github.com/pachadotdev/usitcgravity">International Trade and Production Database for Estimation (ITPD-E)</a>, and other affine datasets. This work aims at easing data access to help to facilitate research, and has required me to master R, C++ and SQL, therefore I have computational skills more common in software engineering rather than Political Science or Statistics.</p>
+<p>I intend to summarise gigabytes of data into country and product profiles for academics and policymakers interested in trade. 
+    Since 2017, I’ve maintained the project <a href="#open-trade-statistics">Open Trade Statistics</a>, where I provide free access 
+    to curated trade data based on the United Nations trade statistics.</p>
+
+<p>I’ve created R packages to easily access 
+    <a href="https://github.com/pachadotdev/desta">The Design of Trade Agreements Database (DESTA)</a>, the 
+    <a href="https://github.com/pachadotdev/usitcgravity">International Trade and Production Database for Estimation (ITPD-E)</a>, 
+    and other affine datasets.</p>
+
+<p>This line of work aims at easing data access to help to facilitate research, and has required me to master R, C++ and SQL, 
+    therefore I have computational skills more common in software engineering rather than Political Science or Statistics</p>
 
 <h2 id="r-and-shiny-training">R and Shiny training</h2>
 

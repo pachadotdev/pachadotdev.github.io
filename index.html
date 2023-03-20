@@ -9,316 +9,348 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
+<script src="functions.js"></script>
+
 <body>
 
     <center>
         <h1 id="title">Mauricio "Pachá" Vargas Sepúlveda</h1>
 
-        
-            <a href="#about-me">About me</a>
-            | <a href="#research">Research</a>
-            | <a href="#open-source">Open source</a>
-            | <a href="#datasets">Datasets</a>
-            | <a href="#books">Books</a>
-            | <a href="#r-and-shiny-training">R and Shiny training</a>
+            <a href="javascript:showDiv('about-me')">About me</a>
+            | <a href="javascript:showDiv('research')">Research</a>
+            | <a href="javascript:showDiv('open-source')">Open Source</a>
+            | <a href="javascript:showDiv('datasets')">Datasets</a>
+            | <a href="javascript:showDiv('books')">Books</a>
+            | <a href="javascript:showDiv('r-and-shiny-training')">R and Shiny Training</a>
         
     </center>
 
-    <h2 id="about-me">About me</h2>
+    <div id="about-me">
 
-    <p>
-        I am an MA student in Political Science at the University of Toronto. My research interests include International Relations, 
-        Canadian Politics and Public Policy, with a focus on the politics of trade agreements and sanctions. I have a Master in 
-        Statistics from the Catholic University of Chile and an Engineering degree from the University of Chile. I can provide my 
-        CV (academic/profesional) upon request. You can reach me at m.sepulveda+spam@mail.utoronto.ca (please remove the +spam or 
-        your messages will go to the spam folder).
-    </p>
+        <h2>About me</h2>
 
-    <h2 id="research">Research</h2>
+        <p>
+            I am an MA student in Political Science at the University of Toronto. My research interests include International Relations, 
+            Canadian Politics and Public Policy, with a focus on the politics of trade agreements and sanctions. I have a Master in 
+            Statistics from the Catholic University of Chile and an Engineering degree from the University of Chile. I can provide my 
+            CV (academic/profesional) upon request. You can reach me at m.sepulveda+spam@mail.utoronto.ca (please remove the +spam or 
+            your messages will go to the spam folder).
+        </p>
 
-    <h3>Research Interests</h3>
+        <p>
+            Because of the quantitative nature of my research, I have developed a strong interest in data science and programming. You
+            can check my <a href="https://github.com/pachadotdev">GitHub profile</a>, where I have organized my open source projects,
+            most of them are related to gravity estimation besides data wrangling with R and data visualization with Shiny. This is detailed
+            in the <a href="javascript:showDiv('open-source')">Open Source</a> section.
+        </p>
 
-    <p>
-        International Relations: Trade Agreements, Sanctions, Tariff and Non-Tariff Measures.
-    </p>
+    </div>
 
-    <p>
-        Canadian Politics: Advocacy Coalitions, Federal Hubs, CAN-USA-MEX Transnational Policymaking.
-    </p>
+    <div id="research" style="display:none;">
+    
+        <h2>Research</h2>
 
-    <p>
-        Public Policy: Public-Private Trade Programs, Exports Diversification and Sustainability, Labour Reconversion.
-    </p>
+        <h3>Research Interests</h3>
 
-    <p>
-        Research Methods: Generalized Linear Models, Structural Gravity Model, General Equilibrium Estimation.
-    </p>
+        <p>
+            International Relations: Trade Agreements, Sanctions, Tariff and Non-Tariff Measures.
+        </p>
 
-    <h3>Published Articles</h3>
+        <p>
+            Canadian Politics: Advocacy Coalitions, Federal Hubs, CAN-USA-MEX Transnational Policymaking.
+        </p>
 
-    <p>
-        Wölwer, A.L., Burgard, J.P., Kunst, J., and Vargas Sepúlveda, M. “Gravity: Estimation Methods for Gravity Models in R.”
-        <i>Journal of Open Source Software</i> 3, no. 31 (November 19, 2018): 1038. <a href="https://doi.org/10.21105/joss.01038">
-            https://doi.org/10.21105/joss.01038</a>.
-    </p>
+        <p>
+            Public Policy: Public-Private Trade Programs, Exports Diversification and Sustainability, Labour Reconversion.
+        </p>
 
-    <h3>Pre-Prints</h3>
+        <p>
+            Research Methods: Generalized Linear Models, Structural Gravity Model, General Equilibrium Estimation.
+        </p>
 
-    <p>
-        Vargas Sepúlveda, M. “Economic Effects of Chile FTAs and an Eventual CTPP Accession.” arXiv, September 28, 2022. 
-        <a href="https://doi.org/10.48550/arXiv.2209.14748">https://doi.org/10.48550/arXiv.2209.14748</a>.
-    </p>
+        <h3>Published Articles</h3>
 
-    <h3>Thesis</h3>
+        <p>
+            Wölwer, A.L., Burgard, J.P., Kunst, J., and Vargas Sepúlveda, M. “Gravity: Estimation Methods for Gravity Models in R.”
+            <i>Journal of Open Source Software</i> 3, no. 31 (November 19, 2018): 1038. <a href="https://doi.org/10.21105/joss.01038">
+                https://doi.org/10.21105/joss.01038</a>.
+        </p>
 
-    <h4>Master in Political Science</h4>
+        <h3>Pre-Prints</h3>
 
-    <p>
-        Vargas Sepúlveda, M. “Trade Sanctions and Rule-Making,” University of Toronto, 2023 (Expected).
-    </p>
+        <p>
+            Vargas Sepúlveda, M. “Economic Effects of Chile FTAs and an Eventual CTPP Accession.” arXiv, September 28, 2022. 
+            <a href="https://doi.org/10.48550/arXiv.2209.14748">https://doi.org/10.48550/arXiv.2209.14748</a>.
+        </p>
 
-    <h4>Master in Statistics</h4>
+        <h3>Thesis</h3>
 
-    <p>
-        Vargas Sepúlveda, M. “Gravity Modelling Into R: Strengthening Analytical Capacity of ESCAP Member States.” UN ESCAP and 
-        P. U. Católica de Chile, 2021.
-    </p>
+        <h4>Master in Political Science</h4>
 
-    <h3>Research Statement</h3>
-     
-        <p>Since the end of World War II, sanctions have increased in number,
-        but their effectiveness has decreased (The
-        Economist 2021), which raises the question whether policy makers
-        implement sanctions to satisfy domestic coalitions or achieve other
-        goals. The economic consequences of sanctions can be explored at the
-        sectoral level, distinguishing categories such as agriculture, energy,
-        manufacturing, mining, and services. The current political and economic
-        order justifies the need to account for the interdependence between
-        different sectors of a national economy in global trade (Sbragia 2010; Vargas Sepúlveda 2020).</p>
-        <p>I propose the thesis project “Trade Sanctions and Rule-Making,” where
-        I shall answer the question “Who wins and who loses with sanctions?” I
-        will focus on trade sanctions between political allies and the variation
-        of effects between industries. This will uncover general patterns about
-        how these mechanisms work, and to explain why and when policymakers
-        deviate from World Trade Organization practices that reduce global trade
-        uncertainty. The project is relevant due to the spiking complexity of
-        global sanctions (Morgan, Syropoulos, and Yotov
-        2022; Coates 2022; Ossa 2014) and the rise of protectionism (Walter 2021; Fajgelbaum et al. 2020).</p>
-        <p>I intend to explore how Generalized Linear Models, in particular the
-        Structural Gravity Model (Burgard et al.
-        2018), can be used to computationally simulate the impact of
-        political decisions, such as a sanction being implemented. The model
-        shows how the resulting changes in one sector in one country causes a
-        chain reaction with consequences in GDP and other measures of economic
-        welfare for third party countries (Vargas
-        Sepúlveda 2021; Larch et al. 2016).</p>
-        <p>I aim to corroborate and expand existing sanctions databases (Felbermayr et al. 2020) and commodities trade
-        data (Borchert et al. 2021). I intend to
-        produce accurate sectoral trade databases for most of or all UN
-        countries. One core feature of my work will be correcting mismatches in
-        the data between importers and exporters, and cover as many gaps as
-        possible by using administrative data from the UN and state-of-the-art
-        linear models for imputation.</p>
-        <p>A comprehensive depiction at the sectoral level will enable me to
-        study specific sanctions’ impact and explore how policy toolkits affect
-        different actors, ideas, and institutions (Lasswell 1970), and to balance theory and
-        information-gathering (Simeon 1976). My
-        contribution will be to integrate our political and economic
-        understanding of sanctions, by creating a methodology to estimate the
-        impact of sanctions that policy makers could use to evaluate the
-        effectiveness, success, and impact of their agendas.</p>
+        <p>
+            Vargas Sepúlveda, M. “Trade Sanctions and Rule-Making,” University of Toronto, 2023 (Expected).
+        </p>
+
+        <h4>Master in Statistics</h4>
+
+        <p>
+            Vargas Sepúlveda, M. “Gravity Modelling Into R: Strengthening Analytical Capacity of ESCAP Member States.” UN ESCAP and 
+            P. U. Católica de Chile, 2021.
+        </p>
+
+        <h3>Research Statement</h3>
         
-    <h3>References</h3>
+            <p>Since the end of World War II, sanctions have increased in number,
+            but their effectiveness has decreased (The
+            Economist 2021), which raises the question whether policy makers
+            implement sanctions to satisfy domestic coalitions or achieve other
+            goals. The economic consequences of sanctions can be explored at the
+            sectoral level, distinguishing categories such as agriculture, energy,
+            manufacturing, mining, and services. The current political and economic
+            order justifies the need to account for the interdependence between
+            different sectors of a national economy in global trade (Sbragia 2010; Vargas Sepúlveda 2020).</p>
+            <p>I propose the thesis project “Trade Sanctions and Rule-Making,” where
+            I shall answer the question “Who wins and who loses with sanctions?” I
+            will focus on trade sanctions between political allies and the variation
+            of effects between industries. This will uncover general patterns about
+            how these mechanisms work, and to explain why and when policymakers
+            deviate from World Trade Organization practices that reduce global trade
+            uncertainty. The project is relevant due to the spiking complexity of
+            global sanctions (Morgan, Syropoulos, and Yotov
+            2022; Coates 2022; Ossa 2014) and the rise of protectionism (Walter 2021; Fajgelbaum et al. 2020).</p>
+            <p>I intend to explore how Generalized Linear Models, in particular the
+            Structural Gravity Model (Burgard et al.
+            2018), can be used to computationally simulate the impact of
+            political decisions, such as a sanction being implemented. The model
+            shows how the resulting changes in one sector in one country causes a
+            chain reaction with consequences in GDP and other measures of economic
+            welfare for third party countries (Vargas
+            Sepúlveda 2021; Larch et al. 2016).</p>
+            <p>I aim to corroborate and expand existing sanctions databases (Felbermayr et al. 2020) and commodities trade
+            data (Borchert et al. 2021). I intend to
+            produce accurate sectoral trade databases for most of or all UN
+            countries. One core feature of my work will be correcting mismatches in
+            the data between importers and exporters, and cover as many gaps as
+            possible by using administrative data from the UN and state-of-the-art
+            linear models for imputation.</p>
+            <p>A comprehensive depiction at the sectoral level will enable me to
+            study specific sanctions’ impact and explore how policy toolkits affect
+            different actors, ideas, and institutions (Lasswell 1970), and to balance theory and
+            information-gathering (Simeon 1976). My
+            contribution will be to integrate our political and economic
+            understanding of sanctions, by creating a methodology to estimate the
+            impact of sanctions that policy makers could use to evaluate the
+            effectiveness, success, and impact of their agendas.</p>
+            
+        <h3>References</h3>
 
-    <p>
-    Borchert, Ingo, Mario Larch, Serge Shikher, and Yoto V. Yotov. 2021.
-    “The International Trade and
-    Production Database for
-    Estimation (ITPD-E).”
-    <em>International Economics (Paris)</em> 166: 140–66. <a href="https://doi.org/10.1016/j.inteco.2020.08.001">https://doi.org/10.1016/j.inteco.2020.08.001</a>.
-    </p>
-    <p>
-    Burgard, Jan Pablo, Joshua Kunst, Mauricio Vargas Sepúlveda, and Anna
-    Lenna Woelwer. 2018. “Gravity: Estimation
-    Methods for Gravity Models in
-    R.” <em>Journal of Open Source Software</em> 31 (3):
-    1038. <a href="https://doi.org/10.21105/joss.01038">https://doi.org/10.21105/joss.01038</a>.
-    </p>
-    <p>
-    Coates, Benjamin. 2022. “A Century of
-    Sanctions.” <em>Origins</em>. <a href="https://origins.osu.edu/article/economic-sanctions-history-trump-global?language_content_entity=en">https://origins.osu.edu/article/economic-sanctions-history-trump-global?language_content_entity=en</a>.
-    </p>
-    <p>
-    Fajgelbaum, Pablo D., Pinelopi K. Goldberg, Patrick J. Kennedy, and Amit
-    K. Khandelwal. 2020. “The Return to
-    Protectionism.” <em>The Quarterly Journal of
-    Economics</em> 135 (1): 1–55. <a href="https://doi.org/10.1093/qje/qjz036">https://doi.org/10.1093/qje/qjz036</a>.
-    </p>
-    <p>
-    Felbermayr, Gabriel, Aleksandra Kirilakha, Constantinos Syropoulos,
-    Erdal Yalcin, and Yoto V. Yotov. 2020. “The Global Sanctions Data
-    Base.” <em>European Economic Review</em> 129: 103561–61. <a href="https://doi.org/10.1016/j.euroecorev.2020.103561">https://doi.org/10.1016/j.euroecorev.2020.103561</a>.
-    </p>
-    <p>
-    Larch, Mario, José-Antonio Monteiro, Roberta Piermartini, and Yoto V
-    Yotov. 2016. <em>An Advanced Guide to Trade Policy Analysis:
-    The Structural Gravity Model</em>. World Trade Organization
-    Geneva. <a href="https://vi.unctad.org/tpa/web/vol2/vol2home.html">https://vi.unctad.org/tpa/web/vol2/vol2home.html</a>.
-    </p>
-    <p>
-    Lasswell, Harold D. 1970. “The Emerging
-    Conception of the Policy
-    Sciences.” <em>Policy Sciences</em> 1 (1): 3–14. <a href="https://doi.org/10.1007/BF00145189">https://doi.org/10.1007/BF00145189</a>.
-    </p>
-    <p>
-    Morgan, T. Clifton, Constantinos Syropoulos, and Yoto Yotov. 2022.
-    “Economic Sanctions: Evolution,
-    Consequences, and Challenges.”
-    <em>School of Economics Working Paper Series</em>, November. <a href="https://ideas.repec.org//p/ris/drxlwp/2022_012.html">https://ideas.repec.org//p/ris/drxlwp/2022_012.html</a>.
-    </p>
-    <p>
-    Ossa, Ralph. 2014. “Trade Wars and Trade
-    Talks with Data.” <em>American Economic
-    Review</em> 104 (12): 4104–46. <a href="https://doi.org/10.1257/aer.104.12.4104">https://doi.org/10.1257/aer.104.12.4104</a>.
-    </p>
-    <p>
-    Sbragia, Alberta. 2010. “The EU, the US,
-    and Trade Policy: Competitive Interdependence in the Management of
-    Globalization.” <em>Journal of European Public Policy</em> 17
-    (3): 368–82. <a href="https://doi.org/10.1080/13501761003662016">https://doi.org/10.1080/13501761003662016</a>.
-    </p>
-    <p>
-    Simeon, Richard. 1976. “Studying Public
-    Policy.” <em>Canadian Journal of Political
-    Science/Revue Canadienne de Science Politique</em> 9 (4): 548–80. <a href="https://doi.org/10.1017/S000842390004470X">https://doi.org/10.1017/S000842390004470X</a>.
-    </p>
-    <p>
-    The Economist. 2021. “Sanctions Are Now a Central Tool of
-    Governments’ Foreign Policy.” <em>The Economist</em>. <a href="https://www.economist.com/finance-and-economics/2021/04/22/sanctions-are-now-a-central-tool-of-governments-foreign-policy">https://www.economist.com/finance-and-economics/2021/04/22/sanctions-are-now-a-central-tool-of-governments-foreign-policy</a>.
-    </p>
-    <p>
-    Vargas Sepúlveda, Mauricio. 2020. <em>Leontief: Input-Output
-    Analysis</em>. <a href="https://CRAN.R-project.org/package=leontief">https://CRAN.R-project.org/package=leontief</a>.
-    </p>
-    <p>
-    ———. 2021. <em>Solutions Manual for An
-    Advanced Guide to Trade
-    Policy Analysis in R</em>. 2nd
-    ed. UN ESCAP. <a href="https://r.tiid.org/R_structural_gravity/">https://r.tiid.org/R_structural_gravity/</a>.
-    </p>
-    <p>
-    Walter, Stefanie. 2021. “The Backlash Against
-    Globalization.” <em>Annual Review of Political Science</em> 24
-    (1): 421–42. <a href="https://doi.org/10.1146/annurev-polisci-041719-102405">https://doi.org/10.1146/annurev-polisci-041719-102405</a>.
-    </p>
+        <p>
+        Borchert, Ingo, Mario Larch, Serge Shikher, and Yoto V. Yotov. 2021.
+        “The International Trade and
+        Production Database for
+        Estimation (ITPD-E).”
+        <em>International Economics (Paris)</em> 166: 140–66. <a href="https://doi.org/10.1016/j.inteco.2020.08.001">https://doi.org/10.1016/j.inteco.2020.08.001</a>.
+        </p>
+        <p>
+        Burgard, Jan Pablo, Joshua Kunst, Mauricio Vargas Sepúlveda, and Anna
+        Lenna Woelwer. 2018. “Gravity: Estimation
+        Methods for Gravity Models in
+        R.” <em>Journal of Open Source Software</em> 31 (3):
+        1038. <a href="https://doi.org/10.21105/joss.01038">https://doi.org/10.21105/joss.01038</a>.
+        </p>
+        <p>
+        Coates, Benjamin. 2022. “A Century of
+        Sanctions.” <em>Origins</em>. <a href="https://origins.osu.edu/article/economic-sanctions-history-trump-global?language_content_entity=en">https://origins.osu.edu/article/economic-sanctions-history-trump-global?language_content_entity=en</a>.
+        </p>
+        <p>
+        Fajgelbaum, Pablo D., Pinelopi K. Goldberg, Patrick J. Kennedy, and Amit
+        K. Khandelwal. 2020. “The Return to
+        Protectionism.” <em>The Quarterly Journal of
+        Economics</em> 135 (1): 1–55. <a href="https://doi.org/10.1093/qje/qjz036">https://doi.org/10.1093/qje/qjz036</a>.
+        </p>
+        <p>
+        Felbermayr, Gabriel, Aleksandra Kirilakha, Constantinos Syropoulos,
+        Erdal Yalcin, and Yoto V. Yotov. 2020. “The Global Sanctions Data
+        Base.” <em>European Economic Review</em> 129: 103561–61. <a href="https://doi.org/10.1016/j.euroecorev.2020.103561">https://doi.org/10.1016/j.euroecorev.2020.103561</a>.
+        </p>
+        <p>
+        Larch, Mario, José-Antonio Monteiro, Roberta Piermartini, and Yoto V
+        Yotov. 2016. <em>An Advanced Guide to Trade Policy Analysis:
+        The Structural Gravity Model</em>. World Trade Organization
+        Geneva. <a href="https://vi.unctad.org/tpa/web/vol2/vol2home.html">https://vi.unctad.org/tpa/web/vol2/vol2home.html</a>.
+        </p>
+        <p>
+        Lasswell, Harold D. 1970. “The Emerging
+        Conception of the Policy
+        Sciences.” <em>Policy Sciences</em> 1 (1): 3–14. <a href="https://doi.org/10.1007/BF00145189">https://doi.org/10.1007/BF00145189</a>.
+        </p>
+        <p>
+        Morgan, T. Clifton, Constantinos Syropoulos, and Yoto Yotov. 2022.
+        “Economic Sanctions: Evolution,
+        Consequences, and Challenges.”
+        <em>School of Economics Working Paper Series</em>, November. <a href="https://ideas.repec.org//p/ris/drxlwp/2022_012.html">https://ideas.repec.org//p/ris/drxlwp/2022_012.html</a>.
+        </p>
+        <p>
+        Ossa, Ralph. 2014. “Trade Wars and Trade
+        Talks with Data.” <em>American Economic
+        Review</em> 104 (12): 4104–46. <a href="https://doi.org/10.1257/aer.104.12.4104">https://doi.org/10.1257/aer.104.12.4104</a>.
+        </p>
+        <p>
+        Sbragia, Alberta. 2010. “The EU, the US,
+        and Trade Policy: Competitive Interdependence in the Management of
+        Globalization.” <em>Journal of European Public Policy</em> 17
+        (3): 368–82. <a href="https://doi.org/10.1080/13501761003662016">https://doi.org/10.1080/13501761003662016</a>.
+        </p>
+        <p>
+        Simeon, Richard. 1976. “Studying Public
+        Policy.” <em>Canadian Journal of Political
+        Science/Revue Canadienne de Science Politique</em> 9 (4): 548–80. <a href="https://doi.org/10.1017/S000842390004470X">https://doi.org/10.1017/S000842390004470X</a>.
+        </p>
+        <p>
+        The Economist. 2021. “Sanctions Are Now a Central Tool of
+        Governments’ Foreign Policy.” <em>The Economist</em>. <a href="https://www.economist.com/finance-and-economics/2021/04/22/sanctions-are-now-a-central-tool-of-governments-foreign-policy">https://www.economist.com/finance-and-economics/2021/04/22/sanctions-are-now-a-central-tool-of-governments-foreign-policy</a>.
+        </p>
+        <p>
+        Vargas Sepúlveda, Mauricio. 2020. <em>Leontief: Input-Output
+        Analysis</em>. <a href="https://CRAN.R-project.org/package=leontief">https://CRAN.R-project.org/package=leontief</a>.
+        </p>
+        <p>
+        ———. 2021. <em>Solutions Manual for An
+        Advanced Guide to Trade
+        Policy Analysis in R</em>. 2nd
+        ed. UN ESCAP. <a href="https://r.tiid.org/R_structural_gravity/">https://r.tiid.org/R_structural_gravity/</a>.
+        </p>
+        <p>
+        Walter, Stefanie. 2021. “The Backlash Against
+        Globalization.” <em>Annual Review of Political Science</em> 24
+        (1): 421–42. <a href="https://doi.org/10.1146/annurev-polisci-041719-102405">https://doi.org/10.1146/annurev-polisci-041719-102405</a>.
+        </p>
 
-    <h2 id="open-source">Open source</h2>
+    </div>
 
-    <h3 id="selected-r-packages">Selected R packages</h3>
+    <div id="open-source" style="display:none;">
 
-    <ul>
-        <li><a href="https://github.com/pachadotdev/fixest/tree/cpp11-some-r-refactoring">Fixest2</a>: Efficient
-            Fixed-Effects Estimation in R With C++ 11 Backend.</li>
-        <li><a href="https://github.com/pachadotdev/desta">DESTA (R version)</a>: The Design of Trade Agreements
-            Database.</li>
-        <li><a href="https://github.com/pachadotdev/usitcgravity">USITC Gravity</a>: Database Adapted From the
-            International Trade and Production Database for Estimation (ITPD-E) and Dynamic Gravity Dataset (DGD).</li>
-        <li><a href="https://github.com/pachadotdev/gravity">Gravity</a>: Estimation methods for gravity models.</li>
-        <li><a href="https://github.com/pachadotdev/tradepolicy">Tradepolicy</a>: Replication of an advanced guide to
-            trade policy analysis.</li>
-        <li><a href="https://github.com/pachadotdev/tradestatistics">Tradestatistics</a>: Open trade statistics API
-            wrapper and utility program.</li>
-        <li><a href="https://github.com/rich-iannone/pointblank">Pointblank</a>: Data validation and organization of
-            metadata for local and remote tables.</li>
-    </ul>
+        <h2>Open source</h2>
 
-    <h3 id="cran">CRAN</h3>
+        <h3 id="selected-r-packages">Selected R packages</h3>
 
-    <p>I maintain the <a href="https://cran.r-project.org/web/views/WebTechnologies.html">WebTechnologies</a> view and
-        the official mirror for <a href="https://cran.dcc.uchile.cl">Chile</a>.</p>
+        <ul>
+            <li><a href="https://github.com/pachadotdev/fixest/tree/cpp11-some-r-refactoring">Fixest2</a>: Efficient
+                Fixed-Effects Estimation in R With C++ 11 Backend.</li>
+            <li><a href="https://github.com/pachadotdev/desta">DESTA (R version)</a>: The Design of Trade Agreements
+                Database.</li>
+            <li><a href="https://github.com/pachadotdev/usitcgravity">USITC Gravity</a>: Database Adapted From the
+                International Trade and Production Database for Estimation (ITPD-E) and Dynamic Gravity Dataset (DGD).</li>
+            <li><a href="https://github.com/pachadotdev/gravity">Gravity</a>: Estimation methods for gravity models.</li>
+            <li><a href="https://github.com/pachadotdev/tradepolicy">Tradepolicy</a>: Replication of an advanced guide to
+                trade policy analysis.</li>
+            <li><a href="https://github.com/pachadotdev/tradestatistics">Tradestatistics</a>: Open trade statistics API
+                wrapper and utility program.</li>
+            <li><a href="https://github.com/rich-iannone/pointblank">Pointblank</a>: Data validation and organization of
+                metadata for local and remote tables.</li>
+        </ul>
 
-    <h3 id="latex">LaTeX</h3>
+        <h3 id="cran">CRAN</h3>
 
-    <p>I created the R package <a href="https://github.com/pachadotdev/varsityblues">varsityblues</a>, which allows you
-        to write assignments, presentations and thesis in RStudio by following UofT formatting. This allows the user to
-        avoid copy-pasting tables or plots from R outputs into Word/LaTeX documents. Instead, it allows the user to work
-        with notebooks that they can export to PDF, and it configures the LaTeX setup automatically.</p>
+        <p>I maintain the <a href="https://cran.r-project.org/web/views/WebTechnologies.html">WebTechnologies</a> view and
+            the official mirror for <a href="https://cran.dcc.uchile.cl">Chile</a>.</p>
 
-    <p>This package is based on the LaTeX style files that were sent to me by the late Professor <a
-            href="https://kcborder.caltech.edu/">Kim C. Border</a>.</p>
+        <h3 id="latex">LaTeX</h3>
 
-    <h3 id="cloud-computing">Cloud computing</h3>
+        <p>I created the R package <a href="https://github.com/pachadotdev/varsityblues">varsityblues</a>, which allows you
+            to write assignments, presentations and thesis in RStudio by following UofT formatting. This allows the user to
+            avoid copy-pasting tables or plots from R outputs into Word/LaTeX documents. Instead, it allows the user to work
+            with notebooks that they can export to PDF, and it configures the LaTeX setup automatically.</p>
 
-    <p>I created images for <a href="https://marketplace.digitalocean.com/apps/rstudio">RStudio Server</a> and <a
-            href="https://marketplace.digitalocean.com/apps/rstudio-kubernetes">RStudio Server + Kubernetes</a>, which
-        allows you to create virtual machines on <a href="https://m.do.co/c/1d5a471e5f54">DigitalOcean</a> and to skip
-        the setup time to install the Tidyverse and other packages. With these images, it takes around 30 seconds to
-        have a ready to go setup for Data Science. This combines well with <a
-            href="https://CRAN.R-project.org/package=analogsea">analogsea</a> as I explained in my <a
-            href="https://pacha.dev/blog/2021/07/17/analogsea-using-arrow-s3-and-digitalocean-for-efficient-model-fitting-in-rstudio/">blog</a>.
-    </p>
+        <p>This package is based on the LaTeX style files that were sent to me by the late Professor <a
+                href="https://kcborder.caltech.edu/">Kim C. Border</a>.</p>
 
-    <p>In simple terms, this allows you to rent a supercomputer, for example, with 48 cores and 200 GB in RAM, for a
-        reasonable price and minimal waiting.</p>
+        <h3 id="cloud-computing">Cloud computing</h3>
 
-    <h2 id="datasets">Datasets</h2>
+        <p>I created images for <a href="https://marketplace.digitalocean.com/apps/rstudio">RStudio Server</a> and <a
+                href="https://marketplace.digitalocean.com/apps/rstudio-kubernetes">RStudio Server + Kubernetes</a>, which
+            allows you to create virtual machines on <a href="https://m.do.co/c/1d5a471e5f54">DigitalOcean</a> and to skip
+            the setup time to install the Tidyverse and other packages. With these images, it takes around 30 seconds to
+            have a ready to go setup for Data Science. This combines well with <a
+                href="https://CRAN.R-project.org/package=analogsea">analogsea</a> as I explained in my <a
+                href="https://pacha.dev/blog/2021/07/17/analogsea-using-arrow-s3-and-digitalocean-for-efficient-model-fitting-in-rstudio/">blog</a>.
+        </p>
 
-    <h3 id="open-trade-statistics">Open Trade Statistics</h3>
+        <p>In simple terms, this allows you to rent a supercomputer, for example, with 48 cores and 200 GB in RAM, for a
+            reasonable price and minimal waiting.</p>
 
-    <p>Since 2017 I've maintained <a href="https://tradestatistics.io">Open Trade Statistics</a>, a project created with
-        the intention to lower the barrier to working with international economic trade data. It includes a public API,
-        a dashboard, and an R package for data retrieval. The project started when I was affected by the fact that many
-        Latin American Universities have limited or no access to the United Nations Commodity Trade Statistics Database
-        (UN COMTRADE).</p>
+    </div>
 
-    <p>OTS provides a curated database derived from UN COMTRADE. I can provide a full SQL dump of the database or share
-        subsets of the database for the period 2002-2020 aggregated by countries or by products up to a detail of six
-        digits in the Harmonised System revision 2012.</p>
+    <div id="datasets" style="display:none;">
+    
+        <h2>Datasets</h2>
 
-    <p>After contacting UN COMTRADE, and suggesting to them my idea of sharing trade data but keeping commercial
-        purposes out of the scope of the project, I got an authorization to share curated versions of their datasets.
-    </p>
+        <h3 id="open-trade-statistics">Open Trade Statistics</h3>
 
-    <h3 id="sql">SQL Databases for students and educators</h3>
+        <p>Since 2017 I've maintained <a href="https://tradestatistics.io">Open Trade Statistics</a>, a project created with
+            the intention to lower the barrier to working with international economic trade data. It includes a public API,
+            a dashboard, and an R package for data retrieval. The project started when I was affected by the fact that many
+            Latin American Universities have limited or no access to the United Nations Commodity Trade Statistics Database
+            (UN COMTRADE).</p>
 
-    <p>Check <a href="https://databases.pacha.dev/">SQL Databases for students and educators</a> if you need access to
-        PostgreSQL databases.</p>
+        <p>OTS provides a curated database derived from UN COMTRADE. I can provide a full SQL dump of the database or share
+            subsets of the database for the period 2002-2020 aggregated by countries or by products up to a detail of six
+            digits in the Harmonised System revision 2012.</p>
 
-    <p>Publicly accessible databases often impose query limits or require registration. Even when I maintain public and
-        limit-free APIs, I never wanted to host a public database because the connection string can be problematic for
-        users.</p>
+        <p>After contacting UN COMTRADE, and suggesting to them my idea of sharing trade data but keeping commercial
+            purposes out of the scope of the project, I got an authorization to share curated versions of their datasets.
+        </p>
 
-    <h2 id="books">Books</h2>
+        <h3 id="sql">SQL Databases for students and educators</h3>
 
-    <p>Vargas Sepúlveda, M. <i>Solutions Manual for An Advanced Guide to Trade Policy Analysis in R</i>. 2nd ed. Bangkok: UN ESCAP, 
-        2022. <a href="https://r.tiid.org/R_structural_gravity/">https://r.tiid.org/R_structural_gravity/</a>.
-    </p>
+        <p>Check <a href="https://databases.pacha.dev/">SQL Databases for students and educators</a> if you need access to
+            PostgreSQL databases.</p>
 
-    <p>
-        Burchell, J. and Vargas Sepúlveda, M. <i>The Hitchhiker's Guide to Plotnine</i>. 1st ed. Victoria: Leanpub, 2019. 
-        <a href="https://leanpub.com/ggplot-guide">https://leanpub.com/ggplot-guide</a>.
-    </p>
+        <p>Publicly accessible databases often impose query limits or require registration. Even when I maintain public and
+            limit-free APIs, I never wanted to host a public database because the connection string can be problematic for
+            users.</p>
 
-    <p>
-        Quiroga, R. Sandoval, G., Vargas Sepúlveda, M. <i>R para Ciencia de Datos: Soluciones de los ejercicios</i>. 1st ed. Santiago: Self-Published, 2019. 
-        <a href="https://r4ds-soluciones.netlify.app/">https://r4ds-soluciones.netlify.app/</a>.
-    </p>
+    </div>
 
-    <p>
-        Quiroga, R., et al. <i>R Para Ciencia de Datos (Translation)</i>. 1st ed. Santiago: Self-Published, 2019. 
-        <a href="https://es.r4ds.hadley.nz/">https://es.r4ds.hadley.nz/</a>.
-    </p>
+    <div id="books" style="display:none;">
+    
+        <h2>Books</h2>
 
-    <p>
-        Burchell, J. and Vargas Sepúlveda, M. <i>The Hitchhiker's Guide to Ggplot2</i>. 1st ed. Victoria: Leanpub, 2016. 
-        <a href="https://leanpub.com/ggplot-guide">https://leanpub.com/ggplot-guide</a>.
-    </p>
+        <p>Vargas Sepúlveda, M. <i>Solutions Manual for An Advanced Guide to Trade Policy Analysis in R</i>. 2nd ed. Bangkok: UN ESCAP, 
+            2022. <a href="https://r.tiid.org/R_structural_gravity/">https://r.tiid.org/R_structural_gravity/</a>.
+        </p>
 
-    <h2 id="r-and-shiny-training">R and Shiny training</h2>
+        <p>
+            Burchell, J. and Vargas Sepúlveda, M. <i>The Hitchhiker's Guide to Plotnine</i>. 1st ed. Victoria: Leanpub, 2019. 
+            <a href="https://leanpub.com/ggplot-guide">https://leanpub.com/ggplot-guide</a>.
+        </p>
 
-    <p>I offer short courses for groups and individual personalized sessions at <a
-            href="https://www.buymeacoffee.com/pacha/extras">Buy Me a Coffee</a>. I am a certified Tidyverse and Shiny
-        instructor by <a href="https://education.rstudio.com/trainers">RStudio</a> and a Software Carpentry Instructor.</p>
+        <p>
+            Quiroga, R. Sandoval, G., Vargas Sepúlveda, M. <i>R para Ciencia de Datos: Soluciones de los ejercicios</i>. 1st ed. Santiago: Self-Published, 2019. 
+            <a href="https://r4ds-soluciones.netlify.app/">https://r4ds-soluciones.netlify.app/</a>.
+        </p>
+
+        <p>
+            Quiroga, R., et al. <i>R Para Ciencia de Datos (Translation)</i>. 1st ed. Santiago: Self-Published, 2019. 
+            <a href="https://es.r4ds.hadley.nz/">https://es.r4ds.hadley.nz/</a>.
+        </p>
+
+        <p>
+            Burchell, J. and Vargas Sepúlveda, M. <i>The Hitchhiker's Guide to Ggplot2</i>. 1st ed. Victoria: Leanpub, 2016. 
+            <a href="https://leanpub.com/ggplot-guide">https://leanpub.com/ggplot-guide</a>.
+        </p>
+
+    </div>
+
+    <div id="r-and-shiny-training" style="display:none;">
+
+        <h2>R and Shiny training</h2>
+
+        <p>I offer short courses for groups and individual personalized sessions at <a
+                href="https://www.buymeacoffee.com/pacha/extras">Buy Me a Coffee</a>. I am a certified Tidyverse and Shiny
+            instructor by <a href="https://education.rstudio.com/trainers">RStudio</a> and a Software Carpentry Instructor.</p>
+
+    </div>
 
     <a href="https://validator.w3.org/check?uri=referer"><img src="https://www.w3.org/Icons/valid-html401"
             alt="Valid HTML 4.01 Transitional" height="31" width="88" align="right", style="border: 10px solid #fafafa"></a>

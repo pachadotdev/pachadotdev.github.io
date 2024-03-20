@@ -102,3 +102,10 @@ function printRandomParagraph() {
     // print the random paragraph
     document.write(randomParagraph);
 }
+
+<script type="text/javascript">
+    var user = 'm.sepulveda';
+    var domain = 'mail.utoronto.ca';
+    var element = document.getElementById('email');
+    element.innerHTML = '<a href="mailto:' + user + '@' + domain + '">' + user + '@' + domain + '</a>';
+</script>

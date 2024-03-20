@@ -103,9 +103,11 @@ function printRandomParagraph() {
     document.write(randomParagraph);
 }
 
-<script type="text/javascript">
+// email to avoid spam
+function setEmail() {
     var user = 'm.sepulveda';
     var domain = 'mail.utoronto.ca';
     var element = document.getElementById('email');
     element.innerHTML = '<a href="mailto:' + user + '@' + domain + '">' + user + '@' + domain + '</a>';
-</script>
+}
+document.addEventListener('DOMContentLoaded', setEmail);

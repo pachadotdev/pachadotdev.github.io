@@ -1,28 +1,121 @@
-body {background-color: #fafafa; font-size: 150%; max-width: 1280px; width: 100%; padding-right: 15px;
-    padding-left: 15px; margin-right: auto; margin-left: auto; }
-a.link {color:#0000A0;}
-a.visited {color: #A000A0;}
-a.active {color: #00A000;}
-img.thumb {height: 100px; width: 100px;}
-img.big {height: 900px; width: 900px;}
-img.xref {vertical-align: middle; padding-left:6px; padding-right:10px;}
-h1, h2, h3, h4, h5, h6 { font-family: Kievit,"PT Sans",sans-serif; letter-spacing: -.028em; }
-h1 { color: #2e87c8; border-bottom: 2px solid #7bb6e1; }
-p,span,li,a { font-family: Charter,Merriweather,serif; }
-a { color: #2e87c8 }
-@font-face{font-family:'Charter';font-weight:400;font-style:normal;src:url(https://pacha.dev/blog/fonts/chn.eot?#iefix) 
-    format("embedded-opentype"),url(https://pacha.dev/blog/fonts/chn.woff) format("woff")}
-@font-face{font-family:'Charter';font-weight:400;font-style:italic;src:url(https://pacha.dev/blog/fonts/chi.eot?#iefix) 
-    format("embedded-opentype"),url(https://pacha.dev/blog/fonts/chi.woff) format("woff")}
-@font-face{font-family:'Charter';font-weight:700;font-style:normal;src:url(https://pacha.dev/blog/fonts/chb.eot?#iefix) 
-    format("embedded-opentype"),url(https://pacha.dev/blog/fonts/chb.woff) format("woff")}
-@font-face{font-family:'Charter';font-weight:700;font-style:italic;src:url(https://pacha.dev/blog/fonts/chbi.eot?#iefix) 
-    format("embedded-opentype"),url(https://pacha.dev/blog/fonts/chbi.woff) format("woff")}
-@font-face{font-family:'Kievit';font-weight:400;font-style:normal;src:url(https://pacha.dev/blog/fonts/kvn.eot?#iefix) 
-    format("embedded-opentype"),url(https://pacha.dev/blog/fonts/kvn.woff) format("woff")}
-@font-face{font-family:'Kievit';font-weight:400;font-style:italic;src:url(https://pacha.dev/blog/fonts/kvi.eot?#iefix) 
-    format("embedded-opentype"),url(https://pacha.dev/blog/fonts/kvi.woff) format("woff")}
-@font-face{font-family:'Kievit';font-weight:700;font-style:normal;src:url(https://pacha.dev/blog/fonts/kvb.eot?#iefix) 
-    format("embedded-opentype"),url(https://pacha.dev/blog/fonts/kvb.woff) format("woff")}
-@font-face{font-family:'Kievit';font-weight:700;font-style:italic;src:url(https://pacha.dev/blog/fonts/kvbi.eot?#iefix) 
-    format("embedded-opentype"),url(https://pacha.dev/blog/fonts/kvbi.woff) format("woff")}
+body {
+    background-color: #fafafa;
+    font-size: 150%;
+    max-width: 1280px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+a.link {
+    color: #0000A0;
+}
+
+a.visited {
+    color: #A000A0;
+}
+
+a.active {
+    color: #00A000;
+}
+
+img.thumb {
+    height: 100px;
+    width: 100px;
+}
+
+img.big {
+    height: 900px;
+    width: 900px;
+}
+
+img.xref {
+    vertical-align: middle;
+    padding-left: 6px;
+    padding-right: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Kievit, "PT Sans", sans-serif;
+    letter-spacing: -.028em;
+}
+
+h1 {
+    color: #2e87c8;
+    border-bottom: 2px solid #7bb6e1;
+}
+
+p,
+span,
+li,
+a,
+figcaption {
+    font-family: Charter, Merriweather, serif;
+}
+
+a {
+    color: #2e87c8
+}
+
+@font-face {
+    font-family: 'Charter';
+    font-weight: 400;
+    font-style: normal;
+    src: url(https://pacha.dev/blog/fonts/chn.eot?#iefix) format("embedded-opentype"), url(https://pacha.dev/blog/fonts/chn.woff) format("woff")
+}
+
+@font-face {
+    font-family: 'Charter';
+    font-weight: 400;
+    font-style: italic;
+    src: url(https://pacha.dev/blog/fonts/chi.eot?#iefix) format("embedded-opentype"), url(https://pacha.dev/blog/fonts/chi.woff) format("woff")
+}
+
+@font-face {
+    font-family: 'Charter';
+    font-weight: 700;
+    font-style: normal;
+    src: url(https://pacha.dev/blog/fonts/chb.eot?#iefix) format("embedded-opentype"), url(https://pacha.dev/blog/fonts/chb.woff) format("woff")
+}
+
+@font-face {
+    font-family: 'Charter';
+    font-weight: 700;
+    font-style: italic;
+    src: url(https://pacha.dev/blog/fonts/chbi.eot?#iefix) format("embedded-opentype"), url(https://pacha.dev/blog/fonts/chbi.woff) format("woff")
+}
+
+@font-face {
+    font-family: 'Kievit';
+    font-weight: 400;
+    font-style: normal;
+    src: url(https://pacha.dev/blog/fonts/kvn.eot?#iefix) format("embedded-opentype"), url(https://pacha.dev/blog/fonts/kvn.woff) format("woff")
+}
+
+@font-face {
+    font-family: 'Kievit';
+    font-weight: 400;
+    font-style: italic;
+    src: url(https://pacha.dev/blog/fonts/kvi.eot?#iefix) format("embedded-opentype"), url(https://pacha.dev/blog/fonts/kvi.woff) format("woff")
+}
+
+@font-face {
+    font-family: 'Kievit';
+    font-weight: 700;
+    font-style: normal;
+    src: url(https://pacha.dev/blog/fonts/kvb.eot?#iefix) format("embedded-opentype"), url(https://pacha.dev/blog/fonts/kvb.woff) format("woff")
+}
+
+@font-face {
+    font-family: 'Kievit';
+    font-weight: 700;
+    font-style: italic;
+    src: url(https://pacha.dev/blog/fonts/kvbi.eot?#iefix) format("embedded-opentype"), url(https://pacha.dev/blog/fonts/kvbi.woff) format("woff")
+}

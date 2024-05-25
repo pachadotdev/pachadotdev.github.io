@@ -111,3 +111,26 @@ function setEmail() {
     element.innerHTML = '<a href="mailto:' + user + '@' + domain + '">' + user + '@' + domain + '</a>';
 }
 document.addEventListener('DOMContentLoaded', setEmail);
+
+function setEmail2() {
+    var user = 'm.sepulveda';
+    var domain = 'mail.utoronto.ca';
+    var element = document.getElementById('email2');
+    element.innerHTML = '<a href="mailto:' + user + '@' + domain + '">' + user + '@' + domain + '</a>';
+}
+document.addEventListener('DOMContentLoaded', setEmail2);
+
+window.onload = function () {
+    function replaceQuotes(node) {
+        if (node.nodeType === 3) { // Text node
+            node.nodeValue = node.nodeValue.replace(/"([^"]*)"/g, '“$1”').replace(/'([^']*)'/g, '‘$1’');
+        } else {
+            var children = node.childNodes;
+            for (var i = 0; i < children.length; i++) {
+                replaceQuotes(children[i]);
+            }
+        }
+    }
+
+    replaceQuotes(document.body);
+};

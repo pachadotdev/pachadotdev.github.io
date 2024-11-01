@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Datasets - Mauricio "Pachá" Vargas Sepúlveda</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="functions.js"></script>
+</head>
+<body>
+    <div id="header"></div>
+    <script type="text/javascript">
+        loadHeader();
+    </script>
+
+    <div id="datasets">
+
+        <h2>Datasets</h2>
+
+        <h3 id="freedomhouse">Freedom House</h3>
+
+        <p>I have provided an Excel version of the Freedom House datasets in the R package "freedomhouse" 
+            <a href="https://github.com/pachadotdev/freedomhouse/raw/main/exported-spreadsheets/freedom-house-excel.zip">here</a>.
+            The added value is that it tidied the data from their spreadsheets and I added the ISO codes fo the countries and the justification text
+            for each sub-item where those were available. Check <a href="https://pacha.dev/freedomhouse">here</a> for more details.
+        </p>
+
+        <h3 id="gravitydatasets">Gravity Datasets</h3>
+
+        <p>The tables provided here were reshaped under Cobb's Normal Form, and in some cases contain corrections that I
+            explain in the <a href="https://github.com/pachadotdev/gravitydatasets">project repository</a>. The specific
+            sources are the Gravity database from the Center for Prospective Studies and International Information
+            (CEPII),
+            the International Trade and Production Database for Estimation (ITPD-E) and the Dynamic Gravity Database
+            (DGD)
+            from the US International Trade Commission (USITC), and the Structural Gravity Database (SGD) from the World
+            Trade Organization (WTO).</p>
+
+        <h3 id="open-trade-statistics">Open Trade Statistics</h3>
+
+        <p>Since 2017 I've maintained <a href="https://tradestatistics.io">Open Trade Statistics</a>, a project created
+            with
+            the intention to lower the barrier to working with international economic trade data. It includes a public
+            API,
+            a dashboard, and an R package for data retrieval. The project started when I was affected by the fact that
+            many
+            Latin American Universities have limited or no access to the United Nations Commodity Trade Statistics
+            Database
+            (UN COMTRADE).</p>
+
+        <p>OTS provides a curated database derived from UN COMTRADE. I can provide a full SQL dump of the database or
+            share
+            subsets of the database for the period 2002-2020 aggregated by countries or by products up to a detail of
+            six
+            digits in the Harmonised System revision 2012.</p>
+
+        <p>After contacting UN COMTRADE, and suggesting to them my idea of sharing trade data but keeping commercial
+            purposes out of the scope of the project, I got an authorization to share curated versions of their
+            datasets.
+        </p>
+
+        <h3 id="sql">SQL Databases for students and educators</h3>
+
+        <p>Check <a href="https://databases.pacha.dev/">SQL Databases for students and educators</a> if you need access
+            to
+            PostgreSQL databases.</p>
+
+        <p>Publicly accessible databases often impose query limits or require registration. Even when I maintain public
+            and
+            limit-free APIs, I never wanted to host a public database because the connection string can be problematic
+            for
+            users.</p>
+
+    </div>
+</body>
+</html>

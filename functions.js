@@ -1,22 +1,21 @@
 // write the header just once
 function loadHeader() {
     var headerHTML = `
-        <div id="title" style="text-align: center;">
-            <h1>Mauricio "Pachá" Vargas Sepúlveda</h1>
-            <a href="index.html">About me</a> |
-            <a href="research.html">Research</a> |
-            <a href="open-source.html">Open Source</a> |
-            <a href="class-notes.html">Class Notes</a> |
-            <a href="datasets.html">Datasets</a> |
-            <a href="books.html">Books</a> |
-            <a href="training-and-consultancy.html">Training and Consultancy</a> |
-            <a href="replication.html">Replication</a> |
-            <a href="https://pacha.dev/blog">Blog</a>
-        </div>
-        
-        <p id="random-paragraph">
-            <b>Random reference of the day</b>:
-        </p>
+    <div id="title" style="text-align: center;">
+        <h1>Mauricio "Pachá" Vargas Sepúlveda</h1>
+        <a href="index.html">About me</a>
+        <a href="research.html">Research</a>
+        <a href="open-source.html">Open Source</a>
+        <a href="class-notes.html">Class Notes</a>
+        <a href="datasets.html">Datasets</a>
+        <a href="books.html">Books</a>
+        <a href="training-and-consultancy.html">Training and Consultancy</a>
+        <a href="replication.html">Replication</a>
+        <a href="https://pacha.dev/blog">Blog</a>
+    </div>
+    <p id="random-paragraph">
+        <b>Random reference of the day (brought to you with JavaScript)</b>:
+    </p>
     `;
     document.getElementById('header').innerHTML = headerHTML;
     printRandomParagraph(); // Call the function after setting the inner HTML

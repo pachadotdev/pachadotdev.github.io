@@ -64,6 +64,10 @@ a {
     /* Optional: Remove underline from links */
 }
 
+#title a:hover {
+    background-color: #fecb65;
+}
+
 @font-face {
     font-family: 'Kievit';
     font-weight: 400;

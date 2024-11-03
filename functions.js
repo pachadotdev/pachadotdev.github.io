@@ -13,8 +13,8 @@ function loadHeader() {
         <a href="replication.html">Replication</a>
         <a href="https://pacha.dev/blog">Blog</a>
     </div>
-    <p id="random-paragraph">
-        <b>Random reference of the day (brought to you with JavaScript)</b>:
+    <p id="random-paragraph" style="margin: 2% 5% 2% 5%; font-size: 0.8em;">
+        Random reference of the day:
     </p>
     `;
     document.getElementById('header').innerHTML = headerHTML;

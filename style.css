@@ -68,6 +68,69 @@ a {
     background-color: #fecb65;
 }
 
+.two-column {
+    display: flex;
+    gap: 2em;
+    align-items: flex-start;
+    width: auto;
+    max-width: 100%;
+    margin: 2em 0;
+    box-sizing: border-box;
+}
+
+.two-column>div:first-child {
+    flex: 0 0 30%;
+    max-width: 30%;
+    min-width: 120px;
+    display: flex;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.two-column img {
+    width: 100%;
+    height: auto;
+}
+
+.two-column>div:last-child {
+    flex: 0 1 70%;
+    max-width: 70%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding-right: 0;
+    overflow-wrap: break-word;
+    word-break: normal;
+}
+
+.two-column>div:last-child p {
+    margin-right: 0;
+    box-sizing: border-box;
+    word-break: normal;
+    overflow-wrap: break-word;
+}
+
+.two-column>div:last-child p:first-child {
+    margin-top: 0;
+}
+
+/* Fix for right margin: ensure .two-column does not overflow parent */
+#about-me, .two-column {
+    /* overflow-x: hidden; */
+}
+
+@media (max-width: 700px) {
+    .two-column {
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .two-column>div:first-child, .two-column>div:last-child {
+        max-width: 100%;
+        min-width: 0;
+        align-items: flex-start;
+        padding-right: 0;
+    }
+}
+
 @font-face {
     font-family: 'Kievit';
     font-weight: 400;

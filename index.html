@@ -28,74 +28,193 @@
 
         <h2>About me</h2>
 
-        <p>
+        <!-- <p>
             <i>Pour la version en française, cliquer <a href="a-propos.html">ici</a>.</i>
+        </p> -->
+
+        <div class="two-column">
+            <div>
+              <img src="HiResPoster.jpg" alt="Gravity Poster"
+                   style="max-width:100%; height:auto; pointer-events:none; user-select:none;"
+                   oncontextmenu="return false;" draggable="false">
+            </div>
+            <div>
+                <p>
+                    I am a PhD student in Political Science at the University of
+                    Toronto, specializing in International Relations and Public Policy.
+                    My research primarily focuses on the political dynamics of trade
+                    agreements and sanctions. Due to this interest, I am a Fellow at the
+                    <a href="https://munkschool.utoronto.ca/">Munk School of Global
+                        Affairs and Public Policy</a>.
+                </p>
+        
+                <p>
+                    My academic background includes a Master of Arts in Political
+                    Science from the University of Toronto, a Master of Science in
+                    Statistics from the Catholic University of Chile, and an Engineering
+                    degree from the University of Chile. Should you need it, I can
+                    provide my academic and professional CV upon request. For any
+                    queries or further information, please contact me at
+                    <span id="email"></span>.
+                </p>
+        
+                <p>
+                    I am convinced that a comprehensive understanding of economic and
+                    financial sanctions between countries can be achieved by integrating
+                    ideas, interests, institutions, and structures. I aim at studying
+                    this combining Natural Language Processing (NLP) and Econometrics to
+                    analyze and quantify the economic repercussions of sanctions. This
+                    is detailed in the 
+                    <a href="research.html">Research</a> section and in my research
+                    statement below.
+                </p>
+
+                <p>
+                    My research interest has led me to develop advanced R, Python, and
+                    C++ skills. My <a href="https://github.com/pachadotdev">GitHub</a>
+                    profile showcases my open-source projects, predominantly focused on
+                    gravity estimation, data wrangling in R, and data visualization
+                    using Shiny. I have created Open Source implementations for efficient
+                    gravity estimation, including published articles about it. More
+                    details can be found in the <a href="open-source.html">Open Source</a>
+                    and <a href="Research">Research</a> sections.
+                </p>
+
+                <p>
+                    I am deeply interested in replication work, which has motivated me
+                    to replicate the results from books and articles in international trade
+                    and political economy. For more details, see the
+                    <a href="replication.html">Replication</a> section where I added
+                    step-by-step independent R codes and math for
+                    <i>Advanced International Trade</i>, <i>The Impact of Trade on Intra-Industry Reallocations and Aggregate Industry Productivity</i>,
+                    <i>The Log of Gravity</i>, and <i>An Advanced Guide to Trade Policy Analysis: The Structural Gravity Model</i>.
+                </p>
+
+                <p>
+                    Additionally, I maintain a blog (<a href="https://pacha.dev/blog">
+                    pacha.dev/blog</a>), where I post various notes and tutorials.
+                    Some highlights include "Creating LaTeX Figures with Inkscape", "A
+                    Crash Course on PostgreSQL for R Users", and "A Step-by-Step Guide
+                    to Write an R Package that Uses C++ Code (Ubuntu)". These posts
+                    reflect my ongoing commitment to both learning and sharing knowledge
+                    in the field.
+                </p>
+            </div>
+        </div>
+
+        <h2>Research Statement</h2>
+
+        <p>
+            Since the end of World War II, sanctions have increased in number, but
+            their effectiveness has decreased (The Economist 2021), which raises
+            the question whether policy makers implement sanctions to satisfy
+            domestic coalitions or achieve other goals. The economic
+            consequences of sanctions can be explored at the sectoral level,
+            distinguishing categories such as agriculture, energy,
+            manufacturing, mining, and services. The current political and
+            economic order justifies the need to account for the interdependence
+            between different sectors of a national economy in global trade
+            (Sbragia 2011).</p>
+        
+        <p>
+            I propose the thesis project "Trade Sanctions and Rule-Making,"
+            where I shall answer the question "Who wins and who loses with
+            sanctions?" I will focus on trade sanctions between political
+            allies and the variation of effects between industries. This will
+            uncover general patterns about how these mechanisms work, and to
+            explain why and when policymakers deviate from World Trade
+            Organization practices that reduce global trade uncertainty. The
+            project is relevant due to the spiking complexity of global
+            sanctions (Morgan, Syropoulos, and Yotov 2022; Coates 2019; Ossa
+            2014) and the rise of protectionism (Walter 2021; Felbermayr et al.
+            2020).
+        </p>
+        
+        <p>
+            I intend to explore how Generalized Linear Models, in particular the
+            Structural Gravity Model (Wölwer et al. 2018),
+            can be used to computationally simulate the impact of political
+            decisions, such as a sanction being implemented. This model shows
+            how the resulting changes in one sector in one country causes a
+            chain reaction with consequences in GDP and other measures of
+            economic welfare for third party countries (Vargas Sepulveda 2024;
+            Yotov et al. 2017). At the present time I have published articles
+            and their corresponding software that provide the open source
+            infrastructure to conduct this work (Vargas Sepulveda 2025; Vargas
+            Sepulveda and Schneider Malamud 2025; Vargas Sepulveda 2025; 2024a).
+        </p>
+
+        <p>	
+            I aim to corroborate and expand existing sanctions databases
+            (Felbermayr et al. 2020) and commodities trade data (Borchert et al.
+            2021). I intend to produce accurate sectoral trade databases for
+            most of or all UN countries. One core feature of my work will be
+            correcting mismatches in the data between importers and exporters,
+            and cover as many gaps as possible by using administrative data from
+            the UN and state-of-the-art linear models for imputation.
+        </p>
+
+        <p>	
+            A comprehensive depiction at the sectoral level will enable me to
+            study specific sanctions’ impact and explore how policy toolkits
+            affect different actors, ideas, and institutions (Lasswell 1970),
+            and to balance theory and information-gathering (Simeon 1976). My
+            contribution will be to integrate our political and economic
+            understanding of sanctions, by creating a methodology to estimate
+            the impact of sanctions that policy makers could use to evaluate the
+            effectiveness, success, and impact of their agendas.
+        </p>
+
+        <h3>References</h3>
+
+        <p>
+            Borchert,
+            Ingo, Mario Larch, Serge Shikher, and Yoto V. Yotov. 2021. "The
+            International Trade and Production Database for Estimation
+            (ITPD-E)." <i>International
+            Economics</i>
+            166 (August):140-66.<a href="https://doi.org/10.1016/j.inteco.2020.08.001">https://doi.org/10.1016/j.inteco.2020.08.001</a>.
+        </p>
+        
+        <p>
+            Coates, Benjamin. 2019. "A Century of Sanctions." Origins. December 13, 2019.
+            <a href="https://origins.osu.edu/article/economic-sanctions-history-trump-global">https://origins.osu.edu/article/economic-sanctions-history-trump-global</a>.
         </p>
 
         <p>
-            I am a PhD student in Political Science at the University of
-            Toronto, specializing in International Relations and Public Policy.
-            My research primarily focuses on the political dynamics of trade
-            agreements and sanctions. Due to this interest, I am a Fellow at the
-            <a href="https://munkschool.utoronto.ca/">Munk School of Global
-                Affairs and Public Policy</a>.
+            Felbermayr, Gabriel, Aleksandra Kirilakha, Constantinos Syropoulos, Erdal
+            Yalcin, and Yoto V. Yotov. 2020. "The Global Sanctions Data Base."
+            <i>European Economic Review</i> 129 (October):103561.
+           <a href="https://doi.org/10.1016/j.euroecorev.2020.103561">https://doi.org/10.1016/j.euroecorev.2020.103561</a>.
+        </p>
+            
+        <p>
+            Lasswell, Harold D. 1970. "The Emerging Conception of the Policy Sciences."
+            <i>Policy Sciences</i>
+            1 (1): 3-14. <a href="https://doi.org/10.1007/BF00145189">https://doi.org/10.1007/BF00145189</a>.
+        </p>
+            
+        <p>
+            Morgan, T. Clifton, Constantinos Syropoulos, and Yoto Yotov. 2022. "Economic
+            Sanctions: Evolution, Consequences, and Challenges." <i>School
+            of Economics Working Paper Series</i>,
+            School of Economics Working Paper Series, , November.
+            <a href="https://ideas.repec.org//p/ris/drxlwp/2022_012.html">https://ideas.repec.org//p/ris/drxlwp/2022_012.html</a>.
+        </p>
+            
+        <p>
+            Ossa, Ralph. 2014. "Trade Wars and Trade Talks with Data." <i>American
+            Economic Review</i>
+            104 (12): 4104-46. <a href="https://doi.org/10.1257/aer.104.12.4104">https://doi.org/10.1257/aer.104.12.4104</a>.
         </p>
 
         <p>
-            My academic background includes a Master of Arts in Political
-            Science from the University of Toronto, a Master of Science in
-            Statistics from the Catholic University of Chile, and an Engineering
-            degree from the University of Chile. Should you need it, I can
-            provide my academic and professional CV upon request. For any
-            queries or further information, please contact me at
-            <span id="email"></span>.
+            Sbragia, Alberta. 2011. "The EU, the US, and Trade Policy: Competitive
+            Interdependence in the Management of Globalization." In <i>Europe
+            and the Management of Globalization</i>. Routledge. <a href="https://doi.org/10.1080/13501761003662016">https://doi.org/10.1080/13501761003662016</a>.
         </p>
-
+            
         <p>
-            I am convinced that a comprehensive understanding of economic and
-            financial sanctions between countries can be achieved by integrating
-            ideas, interests, institutions, and structures. I aim at studying
-            this combining Natural Language Processing (NLP) and Econometrics to
-            analyze and quantify the economic repercussions of sanctions. This
-            is detailed in the 
-            <a href="research.html">Research</a> section.
-        </p>
-
-        <p>
-            My research interest has led me to develop advanced R, Python, and
-            C++ skills. My <a href="https://github.com/pachadotdev">GitHub</a>
-            profile showcases my open-source projects, predominantly focused on
-            gravity estimation, data wrangling in R, and data visualization
-            using Shiny. More details can be found in the
-            <a href="open-source.html">Open Source</a> section.
-        </p>
-
-        <p>
-            Additionally, I maintain a blog (<a href="https://pacha.dev/blog">
-            pacha.dev/blog</a>), where I post various notes and tutorials.
-            Some highlights include "Creating LaTeX Figures with Inkscape", "A
-            Crash Course on PostgreSQL for R Users", and "A Step-by-Step Guide
-            to Write an R Package that Uses C++ Code (Ubuntu)". These posts
-            reflect my ongoing commitment to both learning and sharing knowledge
-            in the field.
-        </p>
-
-        <p>
-            Trivia: My blog post
-            <a href="https://pacha.dev/blog/2021/08/27/comparing-sqlite-duckdb-and-arrow-with-un-trade-data/">
-                Comparing SQLite, DuckDB and Arrow with UN Trade Data</a> made
-                it to the top ten on
-            <a href="https://news.ycombinator.com/front?day=2021-10-27">Hacker News</a>.
-            <!-- <img src="hacker-news-top.png" alt="Hacker News Top">-->
-        </p>
-
-    </div>
-
-    <div style=" text-align: right;">
-        <a href="https://validator.w3.org/check?uri=referer">
-            <img src="https://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01 Strict" height="31" width="88"
-                style="border: 10px solid #fafafa">
-        </a>
-    </div>
-</body>
-</html>
+            Simeon, Richard. 1976. "Studying Public Policy." <i>Canadian
+            Journal of Political Science/Revue Canadienne de Science Politique</i>
+            9 (4): 548-80. <a href="https://doi.org/10.1017/S000842390004470X">https://doi.org
